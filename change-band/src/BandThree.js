@@ -22,6 +22,7 @@ class BandThree extends Component {
           changeTitle={this.changeTitle.bind(this)}
           title={this.state.title}
         />
+        <p>Instructions: Type in your own awesome band name!</p>
       </div>
     )
   }

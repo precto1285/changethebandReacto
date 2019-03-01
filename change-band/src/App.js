@@ -3,6 +3,7 @@ import './App.css';
 import BandOne from './BandOne';
 import BandTwo from './BandTwo';
 import BandThree from './BandThree';
+import BandFour from './BandFour';
 
 class App extends Component {
   render() {
@@ -27,7 +28,7 @@ class App extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-6">
               <div className="card my-3">
                 <div className="card-header" />
                 <div className="card-body">
@@ -35,7 +36,14 @@ class App extends Component {
                 </div>
               </div>
             </div>
-
+            <div className="col-md-6">
+              <div className="card my-3">
+                <div className="card-header" />
+                <div className="card-body">
+                  <BandFour />
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
