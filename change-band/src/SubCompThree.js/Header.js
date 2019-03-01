@@ -8,14 +8,16 @@ class Header extends Component {
     this.props.changeTitle(title);
   }
 
-
   render() {
-    this.props.changeTitle();
     return (
       <div>
         <div className="jumbotron bg-secondary text-white">
-          <Title title={this.props.title} />
-          <input value={this.props.title} onChange={this.handleChange.bind(this)} />
+          <Title
+            title={this.props.title}
+          />
+          <input
+            onChange={this.handleChange.bind(this)}
+          />
         </div>
       </div>
     )
