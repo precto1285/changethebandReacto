@@ -32,29 +32,29 @@ const BandOne = props => {
   return (
     <div>
       <BandOneSub
-        band='Bonehead'
-        style='Hard Rock'
+        band={bandState.band}
+        style={bandState.style}
       />
       <hr />
       <BandMember
-        bandmember='Dino Navarra'
-        role='Vocals'
+        bandmember={bandState.bandmember[0]}
+        role={bandState.role[0]}
       />
       <BandMember
-        bandmember='Chico Cristobal'
-        role='Guitar'
+        bandmember={bandState.bandmember[1]}
+        role={bandState.role[1]}
       />
       <BandMember
-        bandmember='Monjo Balinghasay'
-        role='Guitar'
+        bandmember={bandState.bandmember[2]}
+        role={bandState.role[1]}
       />
       <BandMember
-        bandmember='Phil Recto'
-        role='Bass'
+        bandmember={bandState.bandmember[3]}
+        role={bandState.role[2]}
       />
       <BandMember
-        bandmember='Paul Lacsamana'
-        role='Drums'
+        bandmember={bandState.bandmember[4]}
+        role={bandState.bandmember[3]}
       />
       <br />
       <hr />
