@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 class Title extends Component {
 
   render() {
-    this.props.changeTitle('New Title');
     return (
       <div>
         <div className="jumbotron bg-secondary text-light">

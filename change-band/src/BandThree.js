@@ -15,10 +15,7 @@ class BandThree extends Component {
   render() {
     return (
       <div>
-
         <Title changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
-
-
       </div>
     )
   }
