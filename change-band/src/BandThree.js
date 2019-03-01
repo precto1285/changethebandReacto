@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Title from './SubCompThree.js/Title';
+import Header from './SubCompThree.js/Header';
 
 class BandThree extends Component {
   constructor() {
@@ -12,13 +12,16 @@ class BandThree extends Component {
   changeTitle(title) {
     this.setState({ title });
   }
+
   render() {
     return (
       <div>
-        <Title changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
+        <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
+
       </div>
     )
   }
+
 
 }
 export default BandThree;

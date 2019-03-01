@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
-class Title extends Component {
+import React from 'react';
 
-  render() {
-    return (
-      <div>
-        <div className="jumbotron bg-secondary text-light">
-          <Title title={this.props.title} />
-        </div>
-        <p>Instructions: Add Your Awesome Band Name Here!</p>
-        <input />
-      </div>
-    )
-  }
+const Title = (props) => {
+  return (
+    <h1>{props.title}</h1>
+  )
 }
+
+
+
 export default Title;
 
 
