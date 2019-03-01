@@ -8,14 +8,20 @@ class BandThree extends Component {
       title: 'Galeng'
     }
   }
+
+  changeTitle(title) {
+    this.setState({ title });
+  }
   render() {
     return (
       <div>
-        <Title title={this.state.title} />
-        <p>Instructions: Add your super awesome band name!</p>
-        <input />
+
+        <Title changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
+
+
       </div>
     )
   }
+
 }
 export default BandThree;

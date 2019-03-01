@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+class Title extends Component {
 
-const Title = props => {
-  return (
-    <div>
-      <div className="jumbotron bg-secondary text-light">
-        <h1>{props.title}</h1>
+  render() {
+    this.props.changeTitle('New Title');
+    return (
+      <div>
+        <div className="jumbotron bg-secondary text-light">
+          <Title title={this.props.title} />
+        </div>
+        <p>Instructions: Add Your Awesome Band Name Here!</p>
+        <input />
       </div>
-
-    </div>
-  )
+    )
+  }
 }
 export default Title;
+
+
