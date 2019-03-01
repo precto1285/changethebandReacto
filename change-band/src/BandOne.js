@@ -31,11 +31,12 @@ const BandOne = props => {
 
   return (
     <div>
-      <BandOneSub
-        band={bandState.band}
-        style={bandState.style}
-      />
-      <hr />
+      <div className="bg-primary text-white">
+        <BandOneSub
+          band={bandState.band}
+          style={bandState.style}
+        />
+      </div>
       <BandMember
         bandmember={bandState.bandmember[0]}
         role={bandState.role[0]}
@@ -58,7 +59,7 @@ const BandOne = props => {
       />
       <br />
       <hr />
-      <button onClick={clickHandler}>Change</button>
+      <button className="btn btn-danger mb-3" onClick={clickHandler}>Change</button>
     </div>
   )
 }

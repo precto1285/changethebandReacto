@@ -29,7 +29,7 @@ const BandTwo = props => {
       <h2><SongList song={songState.song[3]} /></h2>
       <h3><BandOrigin bandorigin={songState.bandorigin[3]} /></h3>
       <b />
-      <button onClick={changeSetHandler}>Side B</button>
+      <button className="btn btn-primary" onClick={changeSetHandler}>Side B</button>
     </div>
   )
 }
