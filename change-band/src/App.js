@@ -4,6 +4,8 @@ import BandOne from './BandOne';
 import BandTwo from './BandTwo';
 import BandThree from './BandThree';
 import BandFour from './BandFour';
+import BandFive from './BandFive';
+import BandSix from './BandSix';
 
 class App extends Component {
   render() {
@@ -13,6 +15,8 @@ class App extends Component {
           <div className="jsumbotron py-5">
             <h1>My First React App</h1>
           </div>
+          <br />
+          <hr />
           <div className="row">
             <div className="col-md-6">
               <div className="card my-3">
@@ -27,6 +31,8 @@ class App extends Component {
               </div>
             </div>
           </div>
+          <br />
+          <hr />
           <div className="row">
             <div className="col-md-6">
               <div className="card my-3">
@@ -45,7 +51,22 @@ class App extends Component {
               </div>
             </div>
           </div>
-
+          <br />
+          <hr />
+          <div className="row">
+            <div className="col-md-6 py-3">
+              <div className="card">
+                <BandFive />
+              </div>
+            </div>
+            <div className="col-md-6 py-3">
+              <div className="card">
+                <BandSix />
+              </div>
+            </div>
+          </div>
+          <br />
+          <hr />
         </div>
       </div>
     );
